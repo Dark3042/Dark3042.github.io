@@ -1,0 +1,76 @@
+/* Загальні стилі та темна тема */
+body {
+    background-color: #121212;
+    color: #ffeb3b; /* Жовтий текст */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 60px; /* Відступ зверху, щоб фіксована навігація не перекривала контент */
+    line-height: 1.6;
+}
+
+/* Фіксована навігаційна панель */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Градієнт: зверху темно-зелений, в середині чорний, внизу знову темно-зелений */
+    background: linear-gradient(to bottom, #137745, #137745, #121212,#121212,#137745, #137745);
+    padding: 16px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+}
+
+nav a {
+    color: #ff5252; /* Червоні посилання */
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    color: #ff867f;
+    text-decoration: underline;
+}
+
+/* Головний контейнер */
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-top: 20px;
+}
+
+h2 {
+    color: #fffde7;
+    border-bottom: 1px solid #444;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+/* Стилі для фотографії */
+.profile-img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    border: 2px solid #ffeb3b;
+}
+
+section {
+    margin-bottom: 15px;
+}
+
+/* Підвал */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    color: #888;
+    margin-top: 40px;
+    border-top: 1px solid #333;
+}
