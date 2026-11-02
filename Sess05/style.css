@@ -1,0 +1,234 @@
+/* Загальні стилі */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.5;
+}
+
+/* Навігація */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 20px;
+    color: #111;
+}
+
+.logo span {
+    color: #2563eb;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4b5563;
+    margin: 0 15px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #111;
+}
+
+.nav-auth {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.login-btn {
+    text-decoration: none;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.signup-btn {
+    text-decoration: none;
+    background-color: #0f172a;
+    color: #ffffff;
+    padding: 8px 18px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Герой-блок (Hero) */
+.hero {
+    background-color: #0f172a;
+    color: #ffffff;
+    text-align: center;
+    padding: 90px 20px 110px 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #94a3b8;
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn-primary {
+    background-color: #ffffff;
+    color: #0f172a;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #334155;
+    padding: 10px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.btn-secondary:hover {
+    background-color: #1e293b;
+}
+
+/* Секція карток з використанням Flexbox та адаптивності */
+.paths-section {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.paths-section h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    color: #6b7280;
+    font-size: 15px;
+    margin-bottom: 50px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap; /* Головна властивість для автоматичного перенесення рядків на мобільних */
+}
+
+.card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 30px;
+    flex: 1 1 300px; /* Гнучка ширина: картки стискаються і переносяться на новий рядок при зменшенні екрана */
+    max-width: 350px;
+    text-align: left;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Кольорові верхні лінії карток */
+.card-red::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background-color: #ef4444;
+}
+
+.card-blue::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background-color: #3b82f6;
+}
+
+.card-green::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background-color: #10b981;
+}
+
+.card-icon {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-red h3 { color: #dc2626; }
+.card-blue h3 { color: #2563eb; }
+.card-green h3 { color: #059669; }
+
+.card p {
+    color: #4b5563;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+.card-link {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.card-red .card-link { color: #dc2626; }
+.card-blue .card-link { color: #2563eb; }
+.card-green .card-link { color: #059669; }
+
+/* Футер */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 50px;
+    border-top: 1px solid #eaeaea;
+    color: #9ca3af;
+    font-size: 13px;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 15px;
+    cursor: pointer;
+}
